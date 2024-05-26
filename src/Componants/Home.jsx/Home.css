@@ -1,0 +1,167 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('/src/assets/backgroundVideo.mp4');
+    background-size: cover;
+}
+
+.weather {
+    width: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+    background: linear-gradient(130deg, rgb(183, 164, 37), rgb(10, 23, 208));
+    text-align: center;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: none;
+    outline: 0;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 12px;
+}
+
+.search button {
+    border: none;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button img {
+    max-width: 30px;
+    margin-top: 10px;
+}
+
+.search button:hover {
+    transform: scale(1.05);
+    background-color: rgb(234, 185, 120);
+}
+
+.winfo h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.winfo h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+.winfo img {
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: -20px;
+}
+
+.details .col {
+    width: 45px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.details .col img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.humidity .wind {
+    font-size: 27px;
+}
+
+.error {
+    color: rgb(255, 255, 255);
+    text-decoration: left;
+    margin-right: 10px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .weather {
+        width: 90%;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: calc(100% - 24px); /* Adjust width for padding */
+    }
+
+    .winfo h1 {
+        font-size: 2.5rem;
+    }
+
+    .winfo h2 {
+        font-size: 1.5rem;
+        margin-top: -20px;
+    }
+
+    .winfo img {
+        max-width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+        padding: 0 10px;
+        margin-top: 0;
+    }
+
+    .details .col {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .humidity, .wind {
+        font-size: 1.2rem;
+    }
+}
