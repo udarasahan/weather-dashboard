@@ -53,7 +53,7 @@ export const Home = () => {
   return (
     <div className="video-container">
       <video autoPlay muted loop className="background-video">
-        <source src="/src/assets/backgroundVideo.mp4" type="video/mp4" />
+        <source src={assets.backgroundVideo} type="video/mp4" />
       </video>
 
       <div className='container'>

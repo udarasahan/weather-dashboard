@@ -7,6 +7,7 @@ import rain from './rain.png';
 import snow from './snow.png';
 import wind from './wind.png';
 import drizzle from './drizzle.png';
+import backgroundVideo from './backgroundVideo.mp4';
 
 export const assets = {
     search_icon,
@@ -18,5 +19,6 @@ export const assets = {
     snow,
     wind,
     drizzle,
+    backgroundVideo,
     
 }
